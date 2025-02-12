@@ -35,7 +35,7 @@ cityForm.addEventListener("submit", async (event) => {
     timeIconContainer.innerHTML = timeIcon;
     cityNameContainer.textContent = LocalizedName;
     cityWeatherContainer.textContent = WeatherText;
-    cityTemperatureContainer.textContent = Temperature.Metric.Value;
+    cityTemperatureContainer.textContent = Math.round(Temperature.Metric.Value);
 
     cityForm.reset();
   } catch (error) {
